@@ -37,6 +37,7 @@ This project involves processing up to 100 Excel files containing ad campaign re
 - **Matplotlib/Seaborn**: For generating graphs.
 
 ## Getting Started
+
 1. Clone the repository.
     ```bash
     git clone <repository-url>
@@ -112,20 +113,33 @@ This project processes up to 100 ad campaign files, allowing users to:
 
 ## **Setup**
 
+
+
 ### **1. Clone Repository**
 ```bash
 git clone <repository-url>
 cd <project-directory>
 ```
+## **Important Note**
+```bash
+Create three folders in the root folder and name them "logs", "uploads" and "runtime" (without "")
+```
 
 ### **2. Install Dependencies**
 ```bash
 pip install -r requirements.txt
+
+install the below 
+pip install sklearn
+pip install python-multipart
+pip install openpyxl
+pip install tabulate
+
 ```
 
 ### **3. Configure Environment**
 ```bash
-cp .env.example .env
+create .env file
 # Edit the .env file to add your OpenAI API key
 OPENAI_API_KEY=<your-openai-api-key>
 ```
@@ -133,6 +147,10 @@ OPENAI_API_KEY=<your-openai-api-key>
 ### **4. Run Application**
 #### **Option 1: Using Streamlit**
 ```bash
+open terminal and run
+uvicorn app.main:app --reload
+
+open another terminal and run 
 streamlit run streamlit_main.py
 ```
 
