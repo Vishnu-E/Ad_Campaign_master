@@ -133,7 +133,7 @@ OPENAI_API_KEY=<your-openai-api-key>
 ### **4. Run Application**
 #### **Option 1: Using Streamlit**
 ```bash
-streamlit run streamlitmain.py
+streamlit run streamlit_main.py
 ```
 
 #### **Option 2: Using Docker**
